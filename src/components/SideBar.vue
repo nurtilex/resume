@@ -15,10 +15,10 @@ import { AkInstagramFill } from "@kalimahapps/vue-icons";
     <h3 class="email">nurtilex@gmail.com</h3>
     <h4 class="location">Base in Bishkek, Kyrgyzstan</h4>
     <div class="contacts">
-      <div class="btn"><AkLinkedinBoxFill /></div>
-      <div class="btn"><AkTelegramFill/> </div>
-      <div class="btn"><AkGithubFill/> </div>
-      <div class="btn"><AkInstagramFill/> </div>
+      <a class="btn btn--linkedin" href="https://www.linkedin.com/in/nurtilex/" target="_blank"><AkLinkedinBoxFill /></a>
+      <a class="btn btn--telegram" href="https://t.me/nurtilex" target="_blank"><AkTelegramFill/> </a>
+      <a class="btn btn--github" href="https://github.com/nurtilex" target="_blank"><AkGithubFill/> </a>
+      <a class="btn btn--insta" href="https://www.instagram.com/nurtilex/" target="_blank"><AkInstagramFill/> </a>
     </div>
     <button class="action-btn">Contact Me</button>
   </aside>
@@ -76,11 +76,27 @@ import { AkInstagramFill } from "@kalimahapps/vue-icons";
       height: 50px;
       border-radius: 50%;
       border: 2px solid var(--text-2);
+      color: var(--text);
 
       &:hover {
-        fill: var(--secondary);
         cursor: pointer;
-        border-color: var(--secondary);
+
+        &.btn--linkedin {
+          border-color: royalblue;
+          color: royalblue;
+        }
+        &.btn--telegram {
+          border-color: dodgerblue;
+          color: dodgerblue;
+        }
+        &.btn--github {
+          border-color: #606065;
+          color: #606065;
+        }
+        &.btn--insta {
+          border-color: #c22c75;
+          color: #c22c75;
+        }
       }
     }
   }
