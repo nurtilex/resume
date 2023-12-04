@@ -87,7 +87,6 @@ const lang = ref('RU');
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 1rem;
     border: 1px solid var(--text-2);
     padding: 0.5rem 0;
     margin: 0;
